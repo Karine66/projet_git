@@ -1,0 +1,24 @@
+div
+{
+	background-image:linear-gradient(blue, green); /* faire dégradé vers la droite rajouter to right avant les couleurs*/
+	width:400px;
+	height:300px;
+	/*on peut rajouter autant de couleurs qu'on veut y compris rgb, penser à RGBA qui permet definir la transparence*/
+	/*possibilité de modifier l'espace occupé pour chaque couleur.(to right, blue 0%, green 30%)*/
+}
+/*possibilité de dégradés radiaux*/
+
+p
+{
+	background-image:radial-gradient(circle at center, white, green); /*possibilité d'utiliser ellipse au lieu de circle : cercle applati*/
+	width:400px;
+	height:300px
+	/*possibilité de positionner le cercle central ailleurs par exemple circle at top left*/
+	/*possibilité d'indiquer jusqu'où se déroule l'effet de dégradé avec closest-corner, closest-side, farthest-corner,farthest-side à placer avant circle ou ellipse*/
+}
+
+section
+{
+	background-image: repeating-linear-gradient (white, green 100px); /*repeter degradé lineaire remplacer par linear par radial si besoin possibilité d'alterner plusieurs couleurs*/
+	background-image: repeating-radial-gradiant (farthest-side ellipse at center, green, red, green 80px); /*dégradé en spirale sur 2 couleurs*/
+}
