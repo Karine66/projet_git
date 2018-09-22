@@ -31,7 +31,7 @@ div
 
 #devant:hover
 {
-	transform:rotateY(360deg; /*On passe de 0 à 360°:tour complet*/
+	transform:rotateY(360deg); /*On passe de 0 à 360°:tour complet*/
 }
 /*astuce:lorsqu'on survole le bloc devant, on applique une rotation au bloc derrière*/
 #devant:hover + #derriere
